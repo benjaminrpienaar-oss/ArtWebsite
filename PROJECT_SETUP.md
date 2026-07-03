@@ -7,7 +7,7 @@ Purpose: Beginner-friendly setup, editing, publishing, and maintenance guide.
 
 ## 1. Install VS Code
 
-Go to https://code.visualstudio.com and download Visual Studio Code. Install it using the default options. Open VS Code after installation.
+Go to https://code.visualstudio.com and download Visual  Code. Install it using the default options. Open VS Code after installation.
 
 ## 2. Install Git
 
@@ -19,7 +19,7 @@ Go to https://github.com and create a free account. Confirm your email address.
 
 ## 4. Create a repository
 
-On GitHub, click the plus button, choose New repository, name it something like `artist-portfolio`, keep it public, and create it.
+On GitHub, click the plus button, choose New repository, name it something like `-portfolio`, keep it public, and create it.
 
 ## 5. Open the website folder
 
@@ -29,7 +29,7 @@ In VS Code, choose File, then Open Folder. Select the `ArtWebsite` folder genera
 
 Because this website reads CSV files, use a local preview server instead of double-clicking the HTML file. In VS Code, install the Live Server extension. Right-click `index.html` and choose Open with Live Server.
 
-## 7. Edit artist information
+## 7. Edit  information
 
 Edit `about.html` for biography and statement text. Edit `contact.html` to replace the email address with the real studio email.
 

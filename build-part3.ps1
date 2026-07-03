@@ -31,7 +31,7 @@ for($i=1;$i -le 60;$i++){
   $avail= if($i%7 -eq 0){"Sold"}elseif($i%5 -eq 0){"Reserved"}else{"Available"}
   $tags=("architecture|memory|light|studio|"+$ser.ToLower().Replace(" ","-"))
   $folder="images/series/$ser/$title"
-  $desc="A layered contemporary artwork from the $ser series, balancing observed structure with atmosphere, erasure, and quiet spatial tension."
+  $desc="A layered  artwork from the $ser series, balancing observed structure with atmosphere, erasure, and quiet spatial tension."
   $id="A{0:D3}" -f $i
   $row=@($id,$title,$ser,$year,$medium,$w,$h,$orient,$price,$avail,$tags,$desc,"$folder/main.jpg","$folder/detail1.jpg","$folder/detail2.jpg","$folder/detail3.jpg","$folder/detail4.jpg")
   $rows += '"' + ($row -join '","') + '"'
@@ -41,12 +41,12 @@ W "$root/data/artworks.csv" ($rows -join "`n")
 W "$root/README.md" @'
 ==================================================
 README.md
-Purpose: Explain the artist portfolio project, folders, files, editing, deployment, and maintenance.
+Purpose: Explain the  portfolio project, folders, files, editing, deployment, and maintenance.
 ==================================================
 
-# Elena Marlow Studio Portfolio
+# brpartsandcraftscoza  Portfolio
 
-This is a complete static artist portfolio website built with HTML, CSS, and vanilla JavaScript. It is designed for GitHub Pages and does not need a server, database, React, Node, PHP, Firebase, or any backend.
+This is a complete static  portfolio website built with HTML, CSS, and vanilla JavaScript. It is designed for GitHub Pages and does not need a server, database, React, Node, PHP, Firebase, or any backend.
 
 ## How the site works
 
@@ -63,7 +63,7 @@ The owner updates the website by editing CSV files and copying artwork image fol
 - `index.html`: homepage.
 - `gallery.html`: searchable and filterable gallery.
 - `artwork.html`: single artwork detail page.
-- `about.html`: artist biography and statement.
+- `about.html`:  biography and statement.
 - `contact.html`: inquiry page.
 - `404.html`: GitHub Pages not-found page.
 - `css`: visual styling.
@@ -102,7 +102,7 @@ Purpose: Beginner-friendly setup, editing, publishing, and maintenance guide.
 
 ## 1. Install VS Code
 
-Go to https://code.visualstudio.com and download Visual Studio Code. Install it using the default options. Open VS Code after installation.
+Go to https://code.visualstudio.com and download Visual  Code. Install it using the default options. Open VS Code after installation.
 
 ## 2. Install Git
 
@@ -114,7 +114,7 @@ Go to https://github.com and create a free account. Confirm your email address.
 
 ## 4. Create a repository
 
-On GitHub, click the plus button, choose New repository, name it something like `artist-portfolio`, keep it public, and create it.
+On GitHub, click the plus button, choose New repository, name it something like `-portfolio`, keep it public, and create it.
 
 ## 5. Open the website folder
 
@@ -124,7 +124,7 @@ In VS Code, choose File, then Open Folder. Select the `ArtWebsite` folder genera
 
 Because this website reads CSV files, use a local preview server instead of double-clicking the HTML file. In VS Code, install the Live Server extension. Right-click `index.html` and choose Open with Live Server.
 
-## 7. Edit artist information
+## 7. Edit  information
 
 Edit `about.html` for biography and statement text. Edit `contact.html` to replace the email address with the real studio email.
 

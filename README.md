@@ -1,11 +1,11 @@
 ﻿==================================================
 README.md
-Purpose: Explain the artist portfolio project, folders, files, editing, deployment, and maintenance.
+Purpose: Explain the  portfolio project, folders, files, editing, deployment, and maintenance.
 ==================================================
 
-# Elena Marlow Studio Portfolio
+# brpartsandcraftscoza  Portfolio
 
-This is a complete static artist portfolio website built with HTML, CSS, and vanilla JavaScript. It is designed for GitHub Pages and does not need a server, database, React, Node, PHP, Firebase, or any backend.
+This is a complete static  portfolio website built with HTML, CSS, and vanilla JavaScript. It is designed for GitHub Pages and does not need a server, database, React, Node, PHP, Firebase, or any backend.
 
 ## How the site works
 
@@ -22,7 +22,7 @@ The owner updates the website by editing CSV files and copying artwork image fol
 - `index.html`: homepage.
 - `gallery.html`: searchable and filterable gallery.
 - `artwork.html`: single artwork detail page.
-- `about.html`: artist biography and statement.
+- `about.html`:  biography and statement.
 - `contact.html`: inquiry page.
 - `404.html`: GitHub Pages not-found page.
 - `css`: visual styling.
