@@ -29,7 +29,7 @@ const StudioData=(()=>{
     a.Series=a.Series||"Monotype Archive";
     a.Year=a.Year||"2026";
     a.Medium=a.Medium||"Monotype print";
-    a.Orientation=a.Orientation||"Portrait";
+    a.Orientation=a.Orientation||"Any";
     a.Tags=a.Tags||"monotype|signed print|paper";
     a.Width=a.Width||"610";
     a.Height=a.Height||"940";
@@ -43,7 +43,7 @@ const StudioData=(()=>{
   }
   async function loadAll(){
     const [artworks,series,featured]=await Promise.all([
-      loadCsv("data/artworks.csv?v=20260704-local-images"),
+      loadCsv("data/artworks.csv?v=20260704-orientation-any"),
       loadCsv("data/series.csv"),
       loadCsv("data/featured.csv")
     ]);

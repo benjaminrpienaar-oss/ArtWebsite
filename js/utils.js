@@ -22,7 +22,7 @@ const StudioUtils=(()=>{
   }
   function artworkAlt(a){
     const title=text(a?.Title,"Untitled");
-    const format=a?.Orientation?`${a.Orientation.toLowerCase()} composition`:"abstract composition";
+    const format=a?.Orientation&&a.Orientation!=="Any"?`${a.Orientation.toLowerCase()} composition`:"abstract composition";
     const series=a?.Series?` from the ${a.Series} series`:"";
     return `${title}, original black and white abstract monotype print, ${format}${series}`;
   }

@@ -1,5 +1,6 @@
 if(typeof StudioData!=="undefined"){
   StudioData.loadAll().then(({artworks,series,featured})=>{
+    const homeArtworks=artworks.filter(a=>a.PriceNumber>0&&a.PriceNumber<600);
     const wall=document.querySelector("[data-hero-wall]");
     if(wall){
       artworks.slice(0,9).forEach((a,i)=>{
@@ -27,8 +28,8 @@ if(typeof StudioData!=="undefined"){
     const heroImage=document.querySelector("[data-about-image]");
     if(heroImage&&artworks[0]) heroImage.append(StudioUtils.image(artworks[0].CoverImage,StudioUtils.artworkAlt(artworks[0])));
 
-    const featuredId=featured.find(f=>artworks.some(a=>a.ID===f.ArtworkID))?.ArtworkID;
-    const pick=artworks.find(a=>a.ID===featuredId)||artworks[0];
+    const featuredId=featured.find(f=>homeArtworks.some(a=>a.ID===f.ArtworkID))?.ArtworkID;
+    const pick=homeArtworks.find(a=>a.ID===featuredId)||homeArtworks[0];
     const featuredBox=document.querySelector("[data-featured-artwork]");
     if(featuredBox&&pick){
       featuredBox.className="featured-card reveal";
@@ -49,7 +50,7 @@ if(typeof StudioData!=="undefined"){
     });
 
     const latest=document.querySelector("[data-latest-artworks]");
-    artworks.slice().sort((a,b)=>b.SortIndex-a.SortIndex).slice(0,8).forEach(a=>latest?.append(StudioUtils.card(a)));
+    homeArtworks.slice().sort((a,b)=>b.SortIndex-a.SortIndex).slice(0,8).forEach(a=>latest?.append(StudioUtils.card(a)));
   }).finally(()=>StudioUtils?.reveal?.());
 }else{
   if(typeof StudioUtils!=="undefined")StudioUtils.reveal();

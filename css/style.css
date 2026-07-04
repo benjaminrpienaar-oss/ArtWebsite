@@ -14,6 +14,7 @@
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
 body{margin:0;font-family:Inter,Arial,sans-serif;color:var(--ink);background:var(--paper);line-height:1.6;text-rendering:optimizeLegibility}
+body[data-page="about"],body[data-page="contact"]{background:#fff}
 body[data-page="home"]{position:relative;background:transparent}
 body[data-page="home"]>main,body[data-page="home"]>.site-header,body[data-page="home"]>.site-footer{position:relative;z-index:1}
 .home-background{position:fixed;inset:0;z-index:-1;overflow:hidden;background:#11100f;pointer-events:none}
